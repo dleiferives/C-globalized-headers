@@ -38,18 +38,18 @@ This allow your to write C programs using keywords in different languages by usi
    cd C-globalized-headers
    ```
 
-2. Copy the header file `multilanguage_c.h` into your project directory.
+2. Copy the header file `multilang_keywords.h` into your project directory.
 
 3. Include the header in your program:
    ```c
-   #include "multilanguage_c.h"
+   #include "multilang_keywords.h"
    ```
 
 ---
 
-## Supported Languages and Keywords
+## Supported Languages and some Keywords
 
-### Toki Pona (`"toki pona"`)
+### Toki Pona (`"toki pona"`) 
 A minimalist constructed language with a simple vocabulary.
 
 | English Keyword    | Toki Pona Keyword |  
@@ -110,8 +110,8 @@ To choose a language, define the `KEYWORD_LANG` macro with one of the supported 
 
 Example:
 ```c
-#define KEYWORD_LANG MULTI_LANG_TOKI_PONA
-#include "multilanguage_c.h"
+#define KEYWORD_LANG "toki pona"
+#include "multilang_keywords.h"
 ```
 
 ### Writing a Program
@@ -124,14 +124,13 @@ Write your program using the keywords in the selected language. Standard library
 
 ### Toki Pona Example
 ```c
-#define KEYWORD_LANG MULTI_LANG_TOKI_PONA
-#include "multilanguage_c.h"
+#define KEYWORD_LANG "toki pona"
+#include "multilang_keywords.h"
 #include <stdio.h>
 
 nanpa main() {
     la (1) {
-        printf("toki pona!
-");
+        printf("toki pona!");
     }
     kama 0;
 }
@@ -139,14 +138,13 @@ nanpa main() {
 
 ### Latin Example
 ```c
-#define KEYWORD_LANG MULTI_LANG_LATINA
-#include "multilanguage_c.h"
+#define KEYWORD_LANG "latina"
+#include "multilang_keywords.h"
 #include <stdio.h>
 
 integer main() {
     si (1) {
-        printf("Salve, Mundi!
-");
+        printf("Salve, Mundi!");
     }
     redi 0;
 }
@@ -154,14 +152,13 @@ integer main() {
 
 ### Spanish Example
 ```c
-#define KEYWORD_LANG MULTI_LANG_ESPAÑOL
+#define KEYWORD_LANG "español"
 #include "multilanguage_c.h"
 #include <stdio.h>
 
 entero main() {
     si (1) {
-        printf("¡Hola, Mundo!
-");
+        printf("¡Hola, Mundo!");
     }
     regresar 0;
 }
@@ -175,8 +172,7 @@ entero main() {
 
 int main() {
     wenn (1) {
-        printf("Hallo, Welt!
-");
+        printf("Hallo, Welt!");
     }
     zurück 0;
 }
