@@ -169,8 +169,8 @@ entero main() {
 
 ### German Example
 ```c
-#define KEYWORD_LANG MULTI_LANG_DEUTSCH
-#include "multilanguage_c.h"
+#define KEYWORD_LANG "deutsch"
+#include "multilang_keywords.h"
 #include <stdio.h>
 
 int main() {
